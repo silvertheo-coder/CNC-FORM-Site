@@ -208,30 +208,24 @@
           <div class="col-lg-6">
             <!-- Registration Form -->
             <div class="form-container">
-              <form
-                action="./php/registrationform-process.php"
-                id="registrationForm"
-                data-toggle="validator"
-                data-focus="false"
-                method="POST"
-              >
+              <form form name="contact" netlify id="registrationForm" data-toggle="validator" data-focus="false" method="POST">
                 <div class="form-group">
-                  <input type="text" class="form-control-input" id="rname" name="rname" required />
-                  <label class="label-control" for="rname">Nom</label>
+                  <input type="text" class="form-control-input" id="name" name="name" required />
+                  <label class="label-control" for="name">Nom</label>
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control-input" id="remail" name="remail" required />
-                  <label class="label-control" for="remail">E-mail</label>
+                  <input type="email" class="form-control-input" id="email" name="email" required />
+                  <label class="label-control" for="email">E-mail</label>
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control-input" id="rphone" name="rphone" required />
-                  <label class="label-control" for="rphone">Mobile</label>
+                  <input type="text" class="form-control-input" id="phone" name="phone" required />
+                  <label class="label-control" for="phone">Mobile</label>
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group checkbox">
-                  <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required />J'ai lu et j'accepte la
+                  <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="terms" required />J'ai lu et j'accepte la
                   politique de <a href="privacy-policy.html">Confidentialité </a> et les
                   <a href="terms-conditions.html">Conditions Générales</a> de CNC-FORM
                   <div class="help-block with-errors"></div>
@@ -721,9 +715,9 @@
             <h3>Restez informé des actualités en vous abonnant à notre newsletter et à nos réseaux sociaux</h3>
 
             <!-- Newsletter Form -->
-            <form id="newsletterForm" data-toggle="validator" data-focus="false">
+            <form id="newsletterForm" name="contact" netlify data-toggle="validator" data-focus="false">
               <div class="form-group">
-                <input type="email" class="form-control-input" id="nemail" required />
+                <input type="email" name="email" class="form-control-input" id="nemail" required />
                 <label class="label-control" for="nemail">E-mail</label>
                 <div class="help-block with-errors"></div>
               </div>
