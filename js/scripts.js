@@ -163,6 +163,15 @@
     mainClass: 'my-mfp-slide-bottom',
   })
 
+  /* Iframe Popup for Cards - Magnific Popup */
+  $('.popup-iframe').magnificPopup({
+    type: 'iframe',
+    mainClass: 'mfp-fade', /* Reverted back to mfp-fade */
+    removalDelay: 160, /* Reverted back to original delay */
+    preloader: false,
+    fixedContentPos: false
+  });
+
   /* Move Form Fields Label When User Types */
   // for input and textarea fields
   $('input, textarea').keyup(function () {
